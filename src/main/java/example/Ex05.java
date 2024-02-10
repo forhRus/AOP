@@ -9,7 +9,8 @@ public class Ex05 {
   public static void main(String[] args) {
     AnnotationConfigApplicationContext context =
             new AnnotationConfigApplicationContext(MyConfig.class);
-
+    
+    // закоментирвано в LoggingAspect1
     Library library = context.getBean("libraryBean", Library.class);
     library.getBook();
     library.returnBook();
